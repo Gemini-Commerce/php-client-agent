@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .php-cs-fixer.dist.php
 .travis.yml
 README.md
@@ -37,16 +36,3 @@ lib/Model/RpcStatus.php
 lib/Model/SortSortField.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/AgentApiTest.php
-test/Model/AgentAgentEntityTest.php
-test/Model/AgentCreateAgentRequestTest.php
-test/Model/AgentListAgentsRequestTest.php
-test/Model/AgentListResponseTest.php
-test/Model/AgentSortOrderTest.php
-test/Model/AgentUpdateAgentRequestTest.php
-test/Model/AgentUpdatePayloadTest.php
-test/Model/ListRequestFiltersTest.php
-test/Model/ListRequestSortTest.php
-test/Model/ProtobufAnyTest.php
-test/Model/RpcStatusTest.php
-test/Model/SortSortFieldTest.php

@@ -1,4 +1,4 @@
-# GeminiCommerce\Agent\AgentApi
+# OpenAPI\Client\AgentApi
 
 All URIs are relative to https://agent.api.gogemini.io, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://agent.api.gogemini.io, except if the operation 
 ## `agentCreateAgent()`
 
 ```php
-agentCreateAgent($tenant_id, $body): \GeminiCommerce\Agent\Model\AgentAgentEntity
+agentCreateAgent($tenant_id, $body): \OpenAPI\Client\Model\AgentAgentEntity
 ```
 
 
@@ -26,19 +26,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Agent\Api\AgentApi(
+$apiInstance = new OpenAPI\Client\Api\AgentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $tenant_id = 'tenant_id_example'; // string
-$body = new \GeminiCommerce\Agent\Model\AgentCreateAgentRequest(); // \GeminiCommerce\Agent\Model\AgentCreateAgentRequest
+$body = new \OpenAPI\Client\Model\AgentCreateAgentRequest(); // \OpenAPI\Client\Model\AgentCreateAgentRequest
 
 try {
     $result = $apiInstance->agentCreateAgent($tenant_id, $body);
@@ -53,11 +53,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **tenant_id** | **string**|  | |
-| **body** | [**\GeminiCommerce\Agent\Model\AgentCreateAgentRequest**](../Model/AgentCreateAgentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\AgentCreateAgentRequest**](../Model/AgentCreateAgentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Agent\Model\AgentAgentEntity**](../Model/AgentAgentEntity.md)
+[**\OpenAPI\Client\Model\AgentAgentEntity**](../Model/AgentAgentEntity.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ try {
 ## `agentGetAgent()`
 
 ```php
-agentGetAgent($tenant_id, $id): \GeminiCommerce\Agent\Model\AgentAgentEntity
+agentGetAgent($tenant_id, $id): \OpenAPI\Client\Model\AgentAgentEntity
 ```
 
 
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Agent\Api\AgentApi(
+$apiInstance = new OpenAPI\Client\Api\AgentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ try {
 
 ### Return type
 
-[**\GeminiCommerce\Agent\Model\AgentAgentEntity**](../Model/AgentAgentEntity.md)
+[**\OpenAPI\Client\Model\AgentAgentEntity**](../Model/AgentAgentEntity.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ try {
 ## `agentListAgents()`
 
 ```php
-agentListAgents($tenant_id, $page_size, $body): \GeminiCommerce\Agent\Model\AgentListResponse
+agentListAgents($tenant_id, $page_size, $body): \OpenAPI\Client\Model\AgentListResponse
 ```
 
 
@@ -150,12 +150,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Agent\Api\AgentApi(
+$apiInstance = new OpenAPI\Client\Api\AgentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -163,7 +163,7 @@ $apiInstance = new GeminiCommerce\Agent\Api\AgentApi(
 );
 $tenant_id = 'tenant_id_example'; // string
 $page_size = 56; // int
-$body = new \GeminiCommerce\Agent\Model\AgentListAgentsRequest(); // \GeminiCommerce\Agent\Model\AgentListAgentsRequest
+$body = new \OpenAPI\Client\Model\AgentListAgentsRequest(); // \OpenAPI\Client\Model\AgentListAgentsRequest
 
 try {
     $result = $apiInstance->agentListAgents($tenant_id, $page_size, $body);
@@ -179,11 +179,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **tenant_id** | **string**|  | |
 | **page_size** | **int**|  | |
-| **body** | [**\GeminiCommerce\Agent\Model\AgentListAgentsRequest**](../Model/AgentListAgentsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\AgentListAgentsRequest**](../Model/AgentListAgentsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Agent\Model\AgentListResponse**](../Model/AgentListResponse.md)
+[**\OpenAPI\Client\Model\AgentListResponse**](../Model/AgentListResponse.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ try {
 ## `agentUpdateAgent()`
 
 ```php
-agentUpdateAgent($tenant_id, $id, $body): \GeminiCommerce\Agent\Model\AgentAgentEntity
+agentUpdateAgent($tenant_id, $id, $body): \OpenAPI\Client\Model\AgentAgentEntity
 ```
 
 
@@ -214,12 +214,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Agent\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Agent\Api\AgentApi(
+$apiInstance = new OpenAPI\Client\Api\AgentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -227,7 +227,7 @@ $apiInstance = new GeminiCommerce\Agent\Api\AgentApi(
 );
 $tenant_id = 'tenant_id_example'; // string
 $id = 'id_example'; // string
-$body = new \GeminiCommerce\Agent\Model\AgentUpdateAgentRequest(); // \GeminiCommerce\Agent\Model\AgentUpdateAgentRequest
+$body = new \OpenAPI\Client\Model\AgentUpdateAgentRequest(); // \OpenAPI\Client\Model\AgentUpdateAgentRequest
 
 try {
     $result = $apiInstance->agentUpdateAgent($tenant_id, $id, $body);
@@ -243,11 +243,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **tenant_id** | **string**|  | |
 | **id** | **string**|  | |
-| **body** | [**\GeminiCommerce\Agent\Model\AgentUpdateAgentRequest**](../Model/AgentUpdateAgentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\AgentUpdateAgentRequest**](../Model/AgentUpdateAgentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Agent\Model\AgentAgentEntity**](../Model/AgentAgentEntity.md)
+[**\OpenAPI\Client\Model\AgentAgentEntity**](../Model/AgentAgentEntity.md)
 
 ### Authorization
 
